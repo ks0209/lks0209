@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이버 범죄 대응 및 증거수집 AI 조력자</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #1a365d; text-align: center; font-size: 24px; }
+        .auth-box { text-align: right; margin-bottom: 20px; }
+        .btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .btn-primary { background-color: #1a365d; color: white; }
+        .btn-success { background-color: #2f855a; color: white; }
+        .chat-box { height: 300px; border: 1px solid #e2e8f0; overflow-y: scroll; padding: 10px; margin-bottom: 15px; background: #edf2f7; border-radius: 5px; }
+        .message { margin-bottom: 10px; padding: 8px 12px; border-radius: 5px; max-width: 80%; }
+        .user-msg { background: #1a365d; color: white; margin-left: auto; text-align: right; }
+        .ai-msg { background: white; color: #2d3748; margin-right: auto; }
+        .input-group { display: flex; gap: 10px; }
+        input[type="text"] { flex: 1; padding: 10px; border: 1px solid #cbd5e0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚨 폴-어시스트 (사이버 범죄 증거수집 조력자)</h1>
+    
+    <div class="auth-box">
+        <button id="login-btn" class="btn btn-primary">구글 로그인</button>
+        <span id="user-info" style="display:none;"></span>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+        <div class="message ai-msg">안녕하세요. 사이버 안전 예방 및 증거수집 도우미 AI 경찰관입니다. 현재 겪고 계신 피해 상황을 말씀해 주시면 대처법과 증거 수집 가이드를 안내해 드리겠습니다.</div>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="user-input" placeholder="예: '모르는 사람이 돈을 안 보내면 몸캠 영상을 유포하겠다고 해요.'">
+        <button id="send-btn" class="btn btn-primary">상담하기</button>
+    </div>
+    
+    <div style="margin-top: 15px; text-align: center;">
+        <button id="tts-btn" class="btn btn-success" disabled>🔊 마지막 답변 음성으로 듣기</button>
+    </div>
+</div>
+
+<script>
+    // 다음 단계에서 여기에 Firebase, AI API, TTS 스크립트를 작성할 예정입니다.
+</script>
+</body>
+</html>
